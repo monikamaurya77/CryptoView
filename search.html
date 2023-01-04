@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search | CryptoView</title>
+        <link rel="icon" href="./wallet.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./search.css">
+    </head>
+    <body>
+ <!--Navigation Bar-->
+ <nav class="flex_container"> 
+     <div class="flex_container">
+         <a href="./index.html">
+    <img src="./wallet.png" alt="logo" class="logo">
+</a>
+    <h1>CryptoView</h1>
+</div>
+<a href="index.html" class="anchor_btn">←</a>
+</nav>
+
+<section class="main">
+<div class="input_section">
+    <form action="">
+    <input type="text" placeholder="Search for any coin...." name="q" id="search_field"> <!--for searching mostly we use q it a common practice.-->
+    <button>🔍</button>
+</form>
+</div>
+
+<div class="table flex_container">
+    <table class="center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>LOGO</th>
+                <th>NAME</th>
+                <th>LINK(more info)</th>
+            </tr>
+        </thead>
+        <tbody id="search_result">
+
+        </tbody>
+    </table>
+</div>
+</section>
+
+        <script src="./search.js"></script>
+    </body>
+
+</html>

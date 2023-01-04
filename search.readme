@@ -1,0 +1,43 @@
+Query Parameter--> 
+it occurs after ? mark.
+
+
+before putting form in side section url link afther clicking search-->
+http://127.0.0.1:5500/CryptoView/search.html
+
+after putting form in section the url link afther clicking search-->
+http://127.0.0.1:5500/CryptoView/search.html?q=tgfb
+
+BOM --> bowser object Model.
+in bom we have window as object
+in order to get current location we write in console ,
+--> window.location.href;  (inorder to get url link of the present viewport.)
+--> window.open("https://www.google.com");   (in order to open new tab)
+--> window.document;  (we will get dom i.e. BOM is the parent of DOM you cam say.) 
+
+
+❤️⛅🙂🌡️
+STRING concatination (concating to string)
+eg. const name = " Aayush";
+// Hi , I am <name>
+console.log("Hi , I am" + name); (old method)
+
+
+by using STRING Templating / String Literal/ Template Literal.
+console.log(`Hi , I am ${name}`); (new method)
+
+output--> Hi , I am Aayush
+
+
+eg2. const name1="Aayush";
+     const name2="sinha";
+     const loc="Bangalore";
+
+     console.log("Hi , I am" + name1 + " " + name2 + " form" + loc);
+
+     console.log(`Hi , I am ${name1} ${name2} from ${loc}`);
+
+     Output--> "Hi , I am Aayush sinha from Bangalore
+
+     `(BACKTICK)
+     

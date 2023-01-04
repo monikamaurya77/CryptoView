@@ -1,0 +1,205 @@
+body{
+    margin: 0px;
+    background-color: #EFEFEF;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0px;
+}
+
+nav{
+    height: 4rem;
+    background-color: #655D8A;
+    color: #EFEFEF;
+    padding: 0.2rem 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    font-weight: 700rem;
+}
+
+.flex_container{
+    display : flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main{
+    padding: 5rem;
+    justify-content: space-evenly;
+    font-family: 'Lato', sans-serif;
+    font-size: xx-large;
+    align-items: center;
+    color: #655D8A;
+    font-style: inherit;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.main > img{
+    width : 40%;
+}
+
+.trending_coins{
+    background-color: #D2B7E5;
+    padding: 2rem;
+    overflow-x: hidden;
+    
+}
+
+.trending_coins > .scroll_animation{
+    justify-content: space-evenly;
+    font-family: 'Nunito', sans-serif;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+   /* overflow-x: scroll; */
+   position: relative;
+   animation-name: smooth_scroll;
+   animation-duration: 20s; 
+   animation-timing-function: linear; /*all animation will have same speed*/
+   animation-iteration-count: infinite; /*it will start again from begining*/
+}
+
+.trending_coins .card{
+    padding: 0.5rem 2rem;
+    margin: 0px 5vw;
+    width: 8rem;
+    flex-shrink: 0;
+}
+
+.trending_coins .card img{
+    width: 1.5rem;
+    padding-top: 0.2rem;
+}
+
+.float-left{
+    float: left;
+}
+
+.ml_1{
+    margin-left: 1rem;
+}
+
+.float-right{
+    float: right;
+}
+
+.card{
+    background-color : #EFEFEF;
+     padding: 0.5rem;
+     border-radius: 5px;
+     box-shadow: 0px 0px 20px black;
+}
+
+.features{
+    padding: 2rem;
+    background-color: #C19EE0;
+    justify-content: space-around;
+    font-family: 'Nunito', sans-serif;
+    
+    
+}
+
+.features > .card{ 
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    padding: 1rem;
+    width: 25vw;
+    border: 1px solid black;
+    box-shadow: 10px 10px 0px #9163CB;
+    transition: 0.25s all;
+}
+
+.features > .card:hover{
+    position: relative;
+    top: -10px;
+    left: -10px;
+    box-shadow: 15px 15px 0px #9163CB;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Nunito', sans-serif;
+    background-color: #655D8A;
+    color: #EFEFEF;
+}
+
+footer > h3{
+    padding-top: 0.5rem;
+}
+
+@keyframes smooth_scroll{
+    from{
+        left: 0%;
+    }
+    to{
+        left: -100%;
+    }
+}
+
+.logo{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+nav > h1{
+    display: inline;
+}
+
+
+
+nav > div{
+   align-items: center;
+}
+
+.anchor_btn{
+    border:2px solid gray;
+    padding: 0.5rem;
+    width: 6rem;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    background-color: #D2B7E5;
+    font-weight: 1000;
+    text-align: center;
+    color: black;
+    transition: 0.25s all;
+
+}
+
+nav > .anchor_btn:hover{
+    background-color: #655D8A;
+    color: white;
+}
+
+@media screen and (max-width:400px) {
+    nav h1{            /*descendant beacuse it is not direct child its a grand child combinmator > is used for direct child*/
+        display:none;
+    }
+    
+}
+
+@media screen and (max-width: 850px){
+    .main > img{
+        width: 60vw;
+    }
+    .features{
+        flex-direction: column;
+        align-content: stretch;
+    }
+    
+    .features > .card {
+        width: initial;
+    
+    }
+    .main{
+        text-align: center;
+        font-size: larger;
+        
+    }
+
+}
+

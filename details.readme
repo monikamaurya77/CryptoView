@@ -1,0 +1,56 @@
+# CryptoView - A simple crypto data app
+
+Detail Screen
+-> Name
+-> Current Price (INR and USD)
+-> Description
+-> Symbol
+-> Image (Logo)
+-> Start Date (genesis date)
+-> Market Capital
+-> Last 2 weeks change
+
+
+
+-> https://api.coingecko.com/api/v3/coins/bitcoin?localization=false&tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false
+-> https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd
+-> https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=inr&days=7
+
+Chart Library -> https://www.chartjs.org/
+Chart Library CDN -> https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js
+
+
+❤️⛅🙂🌡️
+OBJECT acessing as an array--->
+in object keys are always be STRING if it is not STRING then itb is converted into STRING.
+
+eg. const obj = {
+    name: "Aayush",
+    location: "Bangalore",
+    key : value,
+};
+
+console.log(obj.name);
+console.log(obj["name"]); //we are acessing it as an array.
+
+console.log(obj.location); //inorder to get that value
+console.log(obj["location]);
+
+OUTPUT--> "Aayush"
+          "Aayush"
+
+          "Bangalore"
+          "Bangalore"
+
+
+REASON to use array is that whta if we dont know what is key what if key is stored in a variable what if key given by user what if key is taken dynimically?
+in that case we use obj acessing with array.🙂
+i.e var key = "name"
+    var k = prompt("Which data you want?");
+ 
+ then we write by using array;
+
+ console.log(obj[key]); --- in order to get value of key
+ console.log(obj[k]);
+
+❤️🙂 if we use anything without cot ''/ "" then JavaScript will treate it as a VARIABLE i.e ()
